@@ -43,7 +43,8 @@ body {
 }
 
 .preview-container {
-  display: grid;
-  grid-template-columns: repeat(3, 150px);
-  gap: 15px;
+  display: flex;              /* puts children in a row */
+  justify-content: center;    /* centers them horizontally */
+  gap: 15px;                  /* space between images */
+  flex-wrap: wrap;            /* allows wrapping if screen is too small */
 }
